@@ -1,4 +1,4 @@
-/* show navbar */
+/* show navbar start*/
 function toggleMenu() 
 {
   const menu = document.getElementById('mobileMenu');
@@ -13,3 +13,17 @@ function toggleMenu()
     overlay.classList.remove('hidden');
   }
 }
+/* show navbar end*/
+
+/* show details to books start */
+  function openModal(content) {
+      document.getElementById("modalContent").innerText = content;
+      document.getElementById("modal").classList.remove("opacity-0", "pointer-events-none");
+      document.getElementById("modal").classList.add("opacity-100", "pointer-events-auto");
+  }
+
+  function closeModal() {
+      document.getElementById("modal").classList.remove("opacity-100", "pointer-events-auto");
+      document.getElementById("modal").classList.add("opacity-0", "pointer-events-none");
+  }
+  /* show details to books end */
