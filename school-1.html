@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="./dist/output.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>معلوماتي الك</title>
     <style>
@@ -18,11 +17,6 @@
             box-sizing: border-box;
         }
     </style>
-    <script>
-        function openModal(detail) {
-            alert(detail);
-        }
-    </script>
 </head>
 <body class="font-semibold">
     <!-- navbar in lab -->
@@ -199,287 +193,352 @@
     <section id="books-class-1234" class="bg-green-50 py-16" dir="rtl">
         <!-- start container-->
         <div class="container mx-auto">
-        <h1 class="text-3xl font-bold text-center text-green-800 mb-8">جميع كتب الصفوف من الأول إلى الرابع الابتدائي</h1>
-        <div class="overflow-x-auto">
-        <table class="min-w-full border border-green-400 text-center rounded-lg overflow-hidden bg-white shadow-lg">
-            <caption class="caption-top pb-6">
-             اضغط على اسم المادة التي تريدها ليتم تحميل الكتاب بشكل مباشر
-            </caption>
-            <thead class="bg-green-700 text-white">
-                <tr>
-                    <th class="px-4 py-2 border">الصف</th>
-                    <th class="px-4 py-2 border">اسم المادة</th>
-                    <th class="px-4 py-2 border">الإجراء</th>
-                </tr>
-            </thead>
-            <tbody class="text-gray-800">
-                <!-- كتب الاول الابتدائي -->
-                <tr>
-                    <td class="px-4 py-2 border">الأول الابتدائي</td>
-                    <td class="px-4 py-2 border">
-                        <a href="https://manahj.edu.iq/upload/upfile/ar/1598.pdf" target="_blank" class="text-green-700 hover:underline">التربية الإسلامية</a>
-                    </td>
-                    <td class="px-4 py-2 border">
-                        <button onclick="openModal('يشمل دروسًا مبسطة عن العقيدة، السلوك الإسلامي، والقصص القرآني بشكل يناسب فهم التلاميذ.')" class="bg-green-600 hover:bg-green-500 text-white text-sm px-4 py-1 rounded transition">عرض التفاصيل</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="px-4 py-2 border">الأول الابتدائي</td>
-                    <td class="px-4 py-2 border">
-                        <a href="https://manahj.edu.iq/upload/upfile/ar/1577.pdf" target="_blank" class="text-green-700 hover:underline">اللغة العربية</a>
-                    </td>
-                    <td class="px-4 py-2 border">
-                        <button onclick="openModal('يشمل الكتاب دروسًا في الحروف الهجائية، القراءة والكتابة، بالإضافة إلى تدريبات متنوعة.')"
-                        class="bg-green-600 hover:bg-green-500 text-white text-sm px-4 py-1 rounded transition">عرض التفاصيل</button>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <td class="px-4 py-2 border">الأول الابتدائي</td>
-                    <td class="px-4 py-2 border">
-                        <a href="https://manahj.edu.iq/upload/upfile/ar/1592.pdf" target="_blank" class="text-green-700 hover:underline">العلوم</a>
-                    </td>
-                    <td class="px-4 py-2 border">
-                        <button onclick="openModal('يتناول مفاهيم الحواس الخمسة، الكائنات الحية، وأهمية الماء والهواء بشكل مبسط.')"
-                        class="bg-green-600 hover:bg-green-500 text-white text-sm px-4 py-1 rounded transition">عرض التفاصيل</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="px-4 py-2 border">الأول الابتدائي</td>
-                    <td class="px-4 py-2 border">
-                        <a href="https://manahj.edu.iq/upload/upfile/ar/1596.pdf" target="_blank" class="text-green-700 hover:underline">اللغة الإنكليزية</a>
-                    </td>
-                    <td class="px-4 py-2 border">
-                        <button onclick="openModal('يحتوي الكتاب على دروس أساسية في مفردات اللغة الإنكليزية مع تمارين بسيطة في الكلمات والجمل.')"
-                        class="bg-green-600 hover:bg-green-500 text-white text-sm px-4 py-1 rounded transition">عرض التفاصيل</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="px-4 py-2 border">الأول الابتدائي</td>
-                    <td class="px-4 py-2 border">
-                        <a href="https://manahj.edu.iq/upload/upfile/ar/1590.pdf" target="_blank" class="text-green-700 hover:underline">التربية الفنية</a>
-                    </td>
-                    <td class="px-4 py-2 border">
-                        <button onclick="openModal('يهدف الكتاب إلى تطوير مهارات التلاميذ الفنية من خلال الرسم والتلوين والتعبير الفني.')"
-                        class="bg-green-600 hover:bg-green-500 text-white text-sm px-4 py-1 rounded transition">عرض التفاصيل</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="px-4 py-2 border">الأول الابتدائي</td>
-                    <td class="px-4 py-2 border">
-                        <a href="https://manahj.edu.iq/upload/upfile/ar/1599.pdf" target="_blank" class="text-green-700 hover:underline">الرياضيات</a>
-                    </td>
-                    <td class="px-4 py-2 border">
-                        <button onclick="openModal('يحتوي الكتاب على أساسيات العمليات الحسابية مثل الجمع والطرح بطريقة مبسطة.')"
-                        class="bg-green-600 hover:bg-green-500 text-white text-sm px-4 py-1 rounded transition">عرض التفاصيل</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="px-4 py-2 border">الأول الابتدائي</td>
-                    <td class="px-4 py-2 border">
-                        <a href="https://manahj.edu.iq/upload/upfile/ar/1579.pdf" target="_blank" class="text-green-700 hover:underline">الدراسات الاجتماعية</a>
-                    </td>
-                    <td class="px-4 py-2 border">
-                        <button onclick="openModal('يشمل الكتاب مفاهيم أساسية حول الوطن، والبيئة، والمجتمع، مع دروس تعريفية.')"
-                        class="bg-green-600 hover:bg-green-500 text-white text-sm px-4 py-1 rounded transition">عرض التفاصيل</button>
-                    </td>
-                </tr>
-                <!-- بداية الصف الثاني الابتدائي -->
-                <tr>
-                    <td class="px-4 py-2 border">الثاني الابتدائي</td>
-                    <td class="px-4 py-2 border">
-                        <a href="https://manahj.edu.iq/upload/upfile/ar/1606.pdf" target="_blank" class="text-green-700 hover:underline">التربية الإسلامية</a>
-                    </td>
-                    <td class="px-4 py-2 border">
-                        <button onclick="openModal('يشمل الكتاب دروسًا عن الصلاة، الأذكار، والسيرة النبوية، بطريقة مبسطة.')"
-                        class="bg-amber-600 hover:bg-amber-500 text-white text-sm px-4 py-1 rounded transition">عرض التفاصيل</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="px-4 py-2 border">الثاني الابتدائي</td>
-                    <td class="px-4 py-2 border">
-                        <a href="https://manahj.edu.iq/upload/upfile/ar/1604.pdf" target="_blank" class="text-green-700 hover:underline">اللغة العربية</a>
-                    </td>
-                    <td class="px-4 py-2 border">
-                        <button onclick="openModal('الكتاب يحتوي على تمارين القراءة والكتابة، مع دروس عن تراكيب الجمل.')"
-                        class="bg-amber-600 hover:bg-amber-500 text-white text-sm px-4 py-1 rounded transition">عرض التفاصيل</button>
-                    </td>
-                </tr>
-                <tr >
-                    <td class="px-4 py-2 border">الثاني الابتدائي</td>
-                    <td class="px-4 py-2 border">
-                        <a href="https://manahj.edu.iq/upload/upfile/ar/1607.pdf" target="_blank" class="text-green-700 hover:underline">اللغة الإنكليزية</a>
-                    </td>
-                    <td class="px-4 py-2 border">
-                        <button onclick="openModal('الكتاب يحتوي على دروس لتعلم الكلمات والعبارات الأساسية في اللغة الإنجليزية.')"
-                        class="bg-amber-600 hover:bg-amber-500 text-white text-sm px-4 py-1 rounded transition">عرض التفاصيل</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="px-4 py-2 border">الثاني الابتدائي</td>
-                    <td class="px-4 py-2 border">
-                        <a href="https://manahj.edu.iq/upload/upfile/ar/1607.pdf" target="_blank" class="text-green-700 hover:underline">العلوم</a>
-                    </td>
-                    <td class="px-4 py-2 border">
-                        <button onclick="openModal('الكتاب يتناول مواضيع عن البيئة، الكائنات الحية، والموارد الطبيعية.')"
-                        class="bg-amber-600 hover:bg-amber-500 text-white text-sm px-4 py-1 rounded transition">عرض التفاصيل</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="px-4 py-2 border">الثاني الابتدائي</td>
-                    <td class="px-4 py-2 border">
-                        <a href="https://manahj.edu.iq/upload/upfile/ar/1605.pdf" target="_blank" class="text-green-700 hover:underline">الرياضيات</a>
-                    </td>
-                    <td class="px-4 py-2 border">
-                        <button onclick="openModal('يشمل الكتاب عمليات الجمع والطرح البسيطة، بالإضافة إلى تدريبات متنوعة.')"
-                        class="bg-amber-600 hover:bg-amber-500 text-white text-sm px-4 py-1 rounded transition">عرض التفاصيل</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="px-4 py-2 border">الثاني الابتدائي</td>
-                    <td class="px-4 py-2 border">
-                        <a href="https://manahj.edu.iq/upload/upfile/ar/1603.pdf" target="_blank" class="text-green-700 hover:underline">الدراسات الاجتماعية</a>
-                    </td>
-                    <td class="px-4 py-2 border">
-                        <button onclick="openModal('يتناول الكتاب مفاهيم حول المجتمعات البشرية والموارد الطبيعية بطريقة مبسطة.')"
-                        class="bg-amber-600 hover:bg-amber-500 text-white text-sm px-4 py-1 rounded transition">عرض التفاصيل</button>
-                    </td>
-                </tr>
-                <!-- بداية الصف الثالث الابتدائي -->
-                <tr>
-                    <td class="px-4 py-2 border">الثالث الابتدائي</td>
-                    <td class="px-4 py-2 border">
-                        <a href="https://manahj.edu.iq/upload/upfile/ar/1608.pdf" target="_blank" class="text-green-700 hover:underline">التربية الإسلامية</a>
-                    </td>
-                    <td class="px-4 py-2 border">
-                        <button onclick="openModal('الكتاب يحتوي على دروس تتعلق بالعقيدة والتفسير والأخلاق بأسلوب سهل.')"
-                        class="bg-cyan-600 hover:bg-cyan-500 text-white text-sm px-4 py-1 rounded transition">عرض التفاصيل</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="px-4 py-2 border">الثالث الابتدائي</td>
-                    <td class="px-4 py-2 border">
-                        <a href="https://manahj.edu.iq/upload/upfile/ar/1609.pdf" target="_blank" class="text-green-700 hover:underline">اللغة العربية</a>
-                    </td>
-                    <td class="px-4 py-2 border">
-                        <button onclick="openModal('الكتاب يحتوي على دروس لتطوير مهارات القراءة والكتابة مع تدريبات على القواعد اللغوية.')"
-                        class="bg-cyan-600 hover:bg-cyan-500 text-white text-sm px-4 py-1 rounded transition">عرض التفاصيل</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="px-4 py-2 border">الثالث الابتدائي</td>
-                    <td class="px-4 py-2 border">
-                        <a href="https://manahj.edu.iq/upload/upfile/ar/1609.pdf" target="_blank" class="text-green-700 hover:underline">اللغة الإنكليزية</a>
-                    </td>
-                    <td class="px-4 py-2 border">
-                        <button onclick="openModal('الكتاب يتضمن دروسًا لتعلم القراءة، الكتابة، والمفردات الإنجليزية بطريقة مبسطة.')"
-                        class="bg-cyan-600 hover:bg-cyan-500 text-white text-sm px-4 py-1 rounded transition">عرض التفاصيل</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="px-4 py-2 border">الثالث الابتدائي</td>
-                    <td class="px-4 py-2 border">
-                        <a href="https://manahj.edu.iq/upload/upfile/ar/1610.pdf" target="_blank" class="text-green-700 hover:underline">العلوم</a>
-                    </td>
-                    <td class="px-4 py-2 border">
-                        <button onclick="openModal('يتناول الكتاب مواضيع في علم الأحياء والفيزياء بأسلوب مبسط.')"
-                        class="bg-cyan-600 hover:bg-cyan-500 text-white text-sm px-4 py-1 rounded transition">عرض التفاصيل</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="px-4 py-2 border">الثالث الابتدائي</td>
-                    <td class="px-4 py-2 border">
-                        <a href="https://manahj.edu.iq/upload/upfile/ar/1611.pdf" target="_blank" class="text-green-700 hover:underline">الرياضيات</a>
-                    </td>
-                    <td class="px-4 py-2 border">
-                        <button onclick="openModal('الكتاب يحتوي على دروس في العمليات الحسابية المتقدمة مثل الضرب والقسمة.')"
-                        class="bg-cyan-600 hover:bg-cyan-500 text-white text-sm px-4 py-1 rounded transition">عرض التفاصيل</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="px-4 py-2 border">الثالث الابتدائي</td>
-                    <td class="px-4 py-2 border">
-                        <a href="https://manahj.edu.iq/upload/upfile/ar/1612.pdf" target="_blank" class="text-green-700 hover:underline">الدراسات الاجتماعية</a>
-                    </td>
-                    <td class="px-4 py-2 border">
-                        <button onclick="openModal('يتناول الكتاب دروسًا في الجغرافيا والمجتمعات البشرية.')"
-                        class="bg-cyan-600 hover:bg-cyan-500 text-white text-sm px-4 py-1 rounded transition">عرض التفاصيل</button>
-                    </td>
-                </tr>
-                <!-- بداية الصف الرابع الابتدائي -->
-                <tr>
-                    <td class="px-4 py-2 border">الرابع الابتدائي</td>
-                    <td class="px-4 py-2 border">
-                        <a href="file:///C:/Users/manah/OneDrive/Desktop/%D9%85%D9%86%D8%A7%D9%87%D8%AC%202014/%D8%A7%D9%84%D8%A7%D8%A8%D8%AA%D8%AF%D8%A7%D9%8A%D9%8A%D8%A9/%D8%A7%D9%84%D8%B1%D8%A7%D8%A8%D8%B9/qu-4-abt-24.pdf" target="_blank" class="text-green-700 hover:underline">التربية الإسلامية</a>
-                    </td>
-                    <td class="px-4 py-2 border">
-                        <button onclick="openModal('الكتاب يحتوي على مواضيع في التوحيد، السيرة النبوية، وأحكام الصلاة.')"
-                        class="bg-red-600 hover:bg-red-500 text-white text-sm px-4 py-1 rounded transition">عرض التفاصيل</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="px-4 py-2 border">الرابع الابتدائي</td>
-                    <td class="px-4 py-2 border">
-                        <a href="https://manahj.edu.iq/upload/upfile/ar/1613.pdf" target="_blank" class="text-green-700 hover:underline">اللغة العربية</a>
-                    </td>
-                    <td class="px-4 py-2 border">
-                        <button onclick="openModal('الكتاب يحتوي على مهارات قراءة، كتابة، وفهم النصوص مع تدريبات في النحو والصرف.')"
-                        class="bg-red-600 hover:bg-red-500 text-white text-sm px-4 py-1 rounded transition">عرض التفاصيل</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="px-4 py-2 border">الرابع الابتدائي</td>
-                    <td class="px-4 py-2 border">
-                        <a href="https://manahj.edu.iq/upload/upfile/ar/1615.pdf" target="_blank" class="text-green-700 hover:underline">اللغة الإنكليزية</a>
-                    </td>
-                    <td class="px-4 py-2 border">
-                        <button onclick="openModal('الكتاب يحتوي على مفردات وقواعد لغوية مع تدريبات تفاعلية لتسهيل التعلم.')"
-                        class="bg-red-600 hover:bg-red-500 text-white text-sm px-4 py-1 rounded transition">عرض التفاصيل</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="px-4 py-2 border">الرابع الابتدائي</td>
-                    <td class="px-4 py-2 border">
-                        <a href="https://manahj.edu.iq/upload/upfile/ar/1614.pdf" target="_blank" class="text-green-700 hover:underline">العلوم</a>
-                    </td>
-                    <td class="px-4 py-2 border">
-                        <button onclick="openModal('يتناول الكتاب دروسًا في الفيزياء، الكيمياء، وعلم الأحياء بشكل مبسط.')"
-                        class="bg-red-600 hover:bg-red-500 text-white text-sm px-4 py-1 rounded transition">عرض التفاصيل</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="px-4 py-2 border">الرابع الابتدائي</td>
-                    <td class="px-4 py-2 border">
-                        <a href="https://manahj.edu.iq/upload/upfile/ar/1615.pdf" target="_blank" class="text-green-700 hover:underline">الرياضيات</a>
-                    </td>
-                    <td class="px-4 py-2 border">
-                        <button onclick="openModal('الكتاب يحتوي على مفاهيم رياضية متقدمة مثل القسمة والجبر، مع مسائل تدريبية.')"
-                        class="bg-red-600 hover:bg-red-500 text-white text-sm px-4 py-1 rounded transition">عرض التفاصيل</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="px-4 py-2 border">الرابع الابتدائي</td>
-                    <td class="px-4 py-2 border">
-                        <a href="https://manahj.edu.iq/upload/upfile/ar/1616.pdf" target="_blank" class="text-green-700 hover:underline">الدراسات الاجتماعية</a>
-                    </td>
-                    <td class="px-4 py-2 border">
-                        <button onclick="openModal('يتناول الكتاب دراسة الثقافات المختلفة، الجغرافيا، والمفاهيم الأساسية للتاريخ.')"
-                        class="bg-red-600 hover:bg-red-500 text-white text-sm px-4 py-1 rounded transition">عرض التفاصيل</button>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    </div> <!--end container-->
-    </section>
-    <!-- Modal for displaying details -->
-        <div id="modal" class="fixed inset-0 bg-gray-800 bg-opacity-50 flex justify-center items-center opacity-0 pointer-events-none transition-opacity duration-300" dir="rtl">
-            <div class="bg-white p-8 rounded-lg max-w-xs w-full">
-                <h3 class="text-xl font-semibold mb-4">تفاصيل المادة</h3>
-                <p id="modalContent" class=" text-sm text-gray-600"></p>
-                <button onclick="closeModal()" class="mt-4 bg-red-600 text-white px-4 py-2 rounded transition hover:bg-red-500">إغلاق</button>
+            <h1 class="text-3xl font-bold text-center text-green-800 mb-8">جميع كتب الصفوف من الأول إلى الرابع الابتدائي</h1>
+            <div class="overflow-x-auto">
+            <table class="min-w-1/2 md:min-w-full border border-green-400 text-center rounded-lg overflow-hidden bg-white shadow-lg">
+                <caption class="caption-top pb-6">
+                اضغط على اسم المادة التي تريد تنزيلها ليتم تحميل الكتاب بشكل مباشر
+                </caption>
+                <thead class="bg-green-700 text-white">
+                    <tr>
+                        <th class="px-4 py-2 border">الصف</th>
+                        <th class="px-4 py-2 border">اسم المادة</th>
+                        <th class="px-4 py-2 border">الإجراء</th>
+                    </tr>
+                </thead>
+                <tbody class="text-gray-800">
+                    <!-- كتب الاول الابتدائي -->
+                    <tr>
+                        <td class="px-4 py-2 border border-gray-300">الأول الابتدائي</td>
+                        <td class="px-4 py-2 border border-gray-300 text-green-700">
+                            التربية الاسلامية
+                        </td>
+                        <td class="px-4 py-2 border border-gray-300">
+                            <button>
+                            <a href="https://manahj.edu.iq/upload/upfile/ar/1598.pdf" target="_blank"
+                            class="bg-green-600 hover:bg-green-500 text-white text-sm px-4 py-1 rounded transition hover:underline"> اضغط للتنزيل  </a>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-2 border border-gray-300">الأول الابتدائي</td>
+                        <td class="px-4 py-2 border border-gray-300 text-green-700">
+                            اللغة العربية
+                        </td>
+                        <td class="px-4 py-2 border border-gray-300">
+                            <button>
+                            <a href="https://manahj.edu.iq/upload/upfile/ar/1577.pdf" target="_blank"
+                            class="bg-green-600 hover:bg-green-500 text-white text-sm px-4 py-1 rounded transition hover:underline"> اضغط للتنزيل  </a>
+                            </button>
+                        </td>
+                    </tr>               
+                    <tr>
+                        <td class="px-4 py-2 border border-gray-300">الأول الابتدائي</td>
+                        <td class="px-4 py-2 border border-gray-300 text-green-700">
+                            العلوم
+                        </td>
+                        <td class="px-4 py-2 border border-gray-300">
+                            <button>
+                            <a href="https://manahj.edu.iq/upload/upfile/ar/1592.pdf" target="_blank"
+                            class="bg-green-600 hover:bg-green-500 text-white text-sm px-4 py-1 rounded transition hover:underline"> اضغط للتنزيل  </a>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-2 border border-gray-300">الأول الابتدائي</td>
+                        <td class="px-4 py-2 border border-gray-300 text-green-700">
+                            اللغة الانكليزية
+                        </td>
+                        <td class="px-4 py-2 border border-gray-300">
+                            <button>
+                            <a href="https://manahj.edu.iq/upload/upfile/ar/1596.pdf" target="_blank"
+                            class="bg-green-600 hover:bg-green-500 text-white text-sm px-4 py-1 rounded transition hover:underline"> اضغط للتنزيل  </a>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-2 border border-gray-300">الأول الابتدائي</td>
+                        <td class="px-4 py-2 border border-gray-300 text-green-700">
+                           التربية الفنية
+                        </td>
+                        <td class="px-4 py-2 border border-gray-300">
+                            <button >
+                            <a href="https://manahj.edu.iq/upload/upfile/ar/1596.pdf" target="_blank"
+                            class="bg-green-600 hover:bg-green-500 text-white text-sm px-4 py-1 rounded transition hover:underline"> اضغط للتنزيل  </a>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-2 border border-gray-300">الأول الابتدائي</td>
+                        <td class="px-4 py-2 border border-gray-300 text-green-700">
+                            الرياضيات
+                        </td>
+                        <td class="px-4 py-2 border border-gray-300">
+                            <button >
+                            <a href="https://manahj.edu.iq/upload/upfile/ar/1599.pdf" target="_blank"
+                            class="bg-green-600 hover:bg-green-500 text-white text-sm px-4 py-1 rounded transition hover:underline"> اضغط للتنزيل  </a>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-2 border border-gray-300">الأول الابتدائي</td>
+                        <td class="px-4 py-2 border border-gray-300 text-green-700">
+                            الدراسة الاجتماعية
+                        </td>
+                        <td class="px-4 py-2 border border-gray-300">
+                            <button >
+                            <a href="https://manahj.edu.iq/upload/upfile/ar/1579.pdf" target="_blank"
+                            class="bg-green-600 hover:bg-green-500 text-white text-sm px-4 py-1 rounded transition hover:underline"> اضغط للتنزيل  </a>
+                            </button>
+                        </td>
+                    </tr>
+                    <!-- بداية الصف الثاني الابتدائي -->
+                    <tr>
+                        <td class="px-4 py-2 border border-gray-300">الثاني الابتدائي</td>
+                        <td class="px-4 py-2 border border-gray-300 text-green-700">
+                            التربية الاسلامية
+                        </td>
+                        <td class="px-4 py-2 border border-gray-300">
+                            <button>
+                            <a href="https://manahj.edu.iq/upload/upfile/ar/1606.pdf" target="_blank" class="bg-amber-600 hover:bg-amber-500 text-white text-sm px-4 py-1 rounded transition">
+                            اضغط للتنزيل
+                            </a>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-2 border border-gray-300">الثاني الابتدائي</td>
+                        <td class="px-4 py-2 border border-gray-300 text-green-700">
+                            اللغة العربية
+                        </td>
+                        <td class="px-4 py-2 border border-gray-300">
+                            <button>
+                            <a href="https://manahj.edu.iq/upload/upfile/ar/1604.pdf" target="_blank" class="bg-amber-600 hover:bg-amber-500 text-white text-sm px-4 py-1 rounded transition">
+                            اضغط للتنزيل
+                            </a>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr >
+                        <td class="px-4 py-2 border border-gray-300">الثاني الابتدائي</td>
+                        <td class="px-4 py-2 border border-gray-300 text-green-700">
+                            اللغة الانكليزية
+                        </td>
+                        <td class="px-4 py-2 border border-gray-300">
+                            <button>
+                            <a href="https://manahj.edu.iq/upload/upfile/ar/1607.pdf" target="_blank" class="bg-amber-600 hover:bg-amber-500 text-white text-sm px-4 py-1 rounded transition">
+                            اضغط للتنزيل
+                            </a>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-2 border border-gray-300">الثاني الابتدائي</td>
+                        <td class="px-4 py-2 border border-gray-300 text-green-700">
+                            العلوم
+                        </td>
+                        <td class="px-4 py-2 border border-gray-300">
+                            <button>
+                            <a href="https://manahj.edu.iq/upload/upfile/ar/1607.pdf" target="_blank" class="bg-amber-600 hover:bg-amber-500 text-white text-sm px-4 py-1 rounded transition">
+                            اضغط للتنزيل
+                            </a>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-2 border border-gray-300">الثاني الابتدائي</td>
+                        <td class="px-4 py-2 border border-gray-300 text-green-700">
+                            الرياضيات
+                        </td>
+                        <td class="px-4 py-2 border border-gray-300">
+                           <button>
+                            <a href="https://manahj.edu.iq/upload/upfile/ar/1605.pdf" target="_blank" class="bg-amber-600 hover:bg-amber-500 text-white text-sm px-4 py-1 rounded transition">
+                            اضغط للتنزيل
+                            </a>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-2 border border-gray-300">الثاني الابتدائي</td>
+                        <td class="px-4 py-2 border border-gray-300 text-green-700">
+                            الدراسات الاجتماعية
+                        </td>
+                        <td class="px-4 py-2 border border-gray-300">
+                            <button>
+                            <a href="https://manahj.edu.iq/upload/upfile/ar/1603.pdf" target="_blank" class="bg-amber-600 hover:bg-amber-500 text-white text-sm px-4 py-1 rounded transition">
+                            اضغط للتنزيل
+                            </a>
+                            </button>
+                        </td>
+                    </tr>
+                    <!-- بداية الصف الثالث الابتدائي -->
+                    <tr>
+                        <td class="px-4 py-2 border border-gray-300">الثالث الابتدائي</td>
+                        <td class="px-4 py-2 border border-gray-300 text-green-700">
+                            التربية الاسلامية
+                        </td>
+                        <td class="px-4 py-2 border border-gray-300">
+                            <button>
+                            <a href="https://manahj.edu.iq/upload/upfile/ar/1608.pdf" target="_blank" class="bg-cyan-600 hover:bg-cyan-500 text-white text-sm px-4 py-1 rounded transition">
+                            اضغط للتنزيل
+                            </a>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-2 border border-gray-300">الثالث الابتدائي</td>
+                        <td class="px-4 py-2 border border-gray-300 text-green-700">
+                            اللغة العربية
+                        </td>
+                        <td class="px-4 py-2 border border-gray-300">
+                            <button>
+                            <a href="https://manahj.edu.iq/upload/upfile/ar/1609.pdf" target="_blank" class="bg-cyan-600 hover:bg-cyan-500 text-white text-sm px-4 py-1 rounded transition">
+                            اضغط للتنزيل
+                            </a>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-2 border border-gray-300">الثالث الابتدائي</td>
+                        <td class="px-4 py-2 border border-gray-300 text-green-700 ">
+                            اللغة الانكليزية
+                        </td>
+                        <td class="px-4 py-2 border border-gray-300">
+                            <button>
+                            <a href="https://manahj.edu.iq/upload/upfile/ar/1609.pdf" target="_blank" class="bg-cyan-600 hover:bg-cyan-500 text-white text-sm px-4 py-1 rounded transition">
+                            اضغط للتنزيل
+                            </a>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-2 border border-gray-300">الثالث الابتدائي</td>
+                        <td class="px-4 py-2 border border-gray-300 text-green-700">
+                            العلوم
+                        </td>
+                        <td class="px-4 py-2 border border-gray-300">
+                            <button>
+                            <a href="https://manahj.edu.iq/upload/upfile/ar/1610.pdf" target="_blank" class="bg-cyan-600 hover:bg-cyan-500 text-white text-sm px-4 py-1 rounded transition">
+                            اضغط للتنزيل
+                            </a>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-2 border border-gray-300">الثالث الابتدائي</td>
+                        <td class="px-4 py-2 border border-gray-300 text-green-700">
+                            الرياضيات
+                        </td>
+                        <td class="px-4 py-2 border border-gray-300">
+                            <button>
+                            <a href="https://manahj.edu.iq/upload/upfile/ar/1611.pdf" target="_blank" class="bg-cyan-600 hover:bg-cyan-500 text-white text-sm px-4 py-1 rounded transition">
+                            اضغط للتنزيل
+                            </a>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-2 border border-gray-300">الثالث الابتدائي</td>
+                        <td class="px-4 py-2 border border-gray-300 text-green-700">
+                            الدراسات الاجتماعية
+                        </td>
+                        <td class="px-4 py-2 border border-gray-300">
+                            <button>
+                            <a href="https://manahj.edu.iq/upload/upfile/ar/1612.pdf" target="_blank" class="bg-cyan-600 hover:bg-cyan-500 text-white text-sm px-4 py-1 rounded transition">
+                            اضغط للتنزيل
+                            </a>
+                            </button>
+                        </td>
+                    </tr>
+                    <!-- بداية الصف الرابع الابتدائي -->
+                    <tr>
+                        <td class="px-4 py-2 border border-gray-300">الرابع الابتدائي</td>
+                        <td class="px-4 py-2 border border-gray-300 text-green-700">
+                        التربية الاسلامية    
+                        </td>
+                        <td class="px-4 py-2 border border-gray-300">
+                            <button>
+                            <a href="file:///C:/Users/manah/OneDrive/Desktop/%D9%85%D9%86%D8%A7%D9%87%D8%AC%202014/%D8%A7%D9%84%D8%A7%D8%A8%D8%AA%D8%AF%D8%A7%D9%8A%D9%8A%D8%A9/%D8%A7%D9%84%D8%B1%D8%A7%D8%A8%D8%B9/qu-4-abt-24.pdf" target="_blank" class="bg-red-600 hover:bg-red-500 text-white text-sm px-4 py-1 rounded transition">
+                            اضغط للتنزيل
+                            </a>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-2 border border-gray-300">الرابع الابتدائي</td>
+                        <td class="px-4 py-2 border border-gray-300 text-green-700">
+                            اللغة العربية
+                        </td>
+                        <td class="px-4 py-2 border border-gray-300">
+                            <button>
+                            <a href="https://manahj.edu.iq/upload/upfile/ar/1613.pdf" target="_blank" class="bg-red-600 hover:bg-red-500 text-white text-sm px-4 py-1 rounded transition">
+                            اضغط للتنزيل
+                            </a>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-2 border border-gray-300">الرابع الابتدائي</td>
+                        <td class="px-4 py-2 border border-gray-300 text-green-700">
+                            اللغة الانكليزية
+                        </td>
+                        <td class="px-4 py-2 border border-gray-300">
+                            <button>
+                            <a href="https://manahj.edu.iq/upload/upfile/ar/1615.pdf" target="_blank" class="bg-red-600 hover:bg-red-500 text-white text-sm px-4 py-1 rounded transition">
+                            اضغط للتنزيل
+                            </a>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-2 border border-gray-300">الرابع الابتدائي</td>
+                        <td class="px-4 py-2 border border-gray-300 text-green-700">
+                            العلوم
+                        </td>
+                        <td class="px-4 py-2 border border-gray-300">
+                            <button>
+                            <a href="https://manahj.edu.iq/upload/upfile/ar/1614.pdf" target="_blank" class="bg-red-600 hover:bg-red-500 text-white text-sm px-4 py-1 rounded transition">
+                            اضغط للتنزيل
+                            </a>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-2 border border-gray-300">الرابع الابتدائي</td>
+                        <td class="px-4 py-2 border border-gray-300 text-green-700">
+                            الرياضيات
+                        </td>
+                        <td class="px-4 py-2 border border-gray-300 ">
+                            <button>
+                            <a href="https://manahj.edu.iq/upload/upfile/ar/1615.pdf" target="_blank" class="bg-red-600 hover:bg-red-500 text-white text-sm px-4 py-1 rounded transition">
+                            اضغط للتنزيل
+                            </a>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-2 border border-gray-300">الرابع الابتدائي</td>
+                        <td class="px-4 py-2 border border-gray-300 text-green-700">
+                            الدراسات الاجتماعية
+                        </td>
+                        <td class="px-4 py-2 border border-gray-300">
+                            <button>
+                            <a href="https://manahj.edu.iq/upload/upfile/ar/1616.pdf" target="_blank" class="bg-red-600 hover:bg-red-500 text-white text-sm px-4 py-1 rounded transition">
+                            اضغط للتنزيل
+                            </a>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+                </table>
             </div>
-    </div>
+        </div> <!--end container-->
+    </section>
+
+    <!--  -->
+    <sectio>
+
+    </sectio>
 
 
     <!-- contact -->
