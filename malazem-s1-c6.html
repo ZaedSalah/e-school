@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="ar" style="scroll-behavior: smooth;" class="overflow-x-hidden">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="منصة معلوماتي - منصة تعليمية للمدارس الإلكترونية">
+    <meta name="keywords" content="مدارس، منصة تعليمية، إلكتروني، تعليم , معلوماتي الك , منصة معلوماتي , منصة معلوماتي الك , مدرسة الكترونية">
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="./dist/output.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>معلوماتي الك</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body class="font-semibold">
+    <!-- navbar in lab -->
+    <header class="h-16 w-full p-4 bg-gray-800">
+        <div class="max-w-6xl mx-auto flex  justify-between items-center ">
+            <h2 class="pl-8 text-gray-100 text-bold"><a href="index.html">منصة معلوماتي </a></h2>
+
+            <!-- button hum.-->
+            <button onclick="toggleMenu()" class="md:hidden text-white text-3xl cursor-pointer focus:outline-none">
+                ☰
+            </button>
+            
+            <nav class="hidden md:flex justify-between items-center text-gray-100">
+                    <ul class="flex flex-row-reverse gap-4 text-[16px]">
+                    <li><a href="#home">الصفحة الرئيسية </a></li>
+                    <li><a href="#select-section-c6"> الملازم والقنوات</li>
+                    <li><a href="#about"> من نحن  </a></li>
+                    <li><a href="#contact"> اتصل بنا </a></li>
+                    <li><a href="#footer"> سياسة الخصوصية  </a></li>
+                </ul>
+               
+            </nav>
+        </div>
+    </header>
+
+    <!-- navbar in phone -->
+    <div id="mobileMenu" class="fixed h-full max-w-[80vw] w-64 top-0 right-0 bg-gray-600 text-gray-100 transform translate-x-full transition z-50 md:hidden">
+        <div class="flex justify-between items-center px-4 border-b flex-row-reverse">
+            <h2 class="text-[16px] p-4"> القائمة </h2>
+            <button onclick="toggleMenu()" class="text-2xl cursor-pointer"> X </button>
+        </div>
+        <nav class="">
+            <ul class="flex flex-col items-center text-gray-100 pt-4 space-y-4 text-[16px]">
+                <li><a href="#home">الصفحة الرئيسية </a></li>
+                <li><a href="#select-section-c6"> الملازم</a></li>
+                <li><a href="#about"> من نحن  </a></li>
+                <li><a href="#contact"> اتصل بنا </a></li>
+                <li><a href="#footer"> سياسة الخصوصية  </a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- overlay -->
+    <div id="overlay" class="fixed inset-0 bg-black opacity-25 hidden z-40" onclick="toggleMenu()"></div>
+
+    <!-- home -->
+    <section id="home" class="relative min-h-[89.5vh] overflow-hidden flex justify-center items-center ">
+        <div
+            class="absolute bg-cover inset-0 bg-center brightness-50"
+            style="background-image: url('images/1.jpg');">
+        </div>
+        <!-- home content -->
+        <div class="relative text-white z-10 text-center mb-24 max-w-2xl" dir="rtl">
+            <h1 class="pb-5 text-4xl md:text-[40px] text-gray-300"> معلوماتي للسادس الابتدائي </h1>
+            <div class="p-2 my-1 leading-8 text-xs md:text-sm rounded-xl text-gray-300 bg-emerald-800">
+                <p> هي منصة تعليمية مجانية تقدم كل ما يحتاجه طلاب السادس الابتدائي</p>
+                <p>  مقسمه بشكل مميز وسهلة التنقل بين الملازم والقنوات  </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- about -->
+    <section id="about" class="bg-gray-100 py-16">
+        <!-- container -->
+        <div class="max-w-7xl mx-auto px-4 items-center">
+            <!-- content title -->
+            <h2 class="text-5xl text-gray-600 text-center pb-12" data-aos="fade-down"> من نحن </h2>
+            <hr class="w-64 mx-auto pb-24 text-gray-400">
+    
+            <div class="flex flex-col-reverse lg:flex-row mx-8 lg:mx-32 gap-8 items-center">
+                <!-- image -->
+                <div class="w-full sm:w-2/3 sm:mt-3 md:w-2/5" data-aos="fade-right">
+                    <img src="images/class-s1-c6.jpg" alt="about class-6 image" class="w-full h-96 shadow-2xl rounded-lg">
+                </div>
+                <!-- content -->
+                <div class="w-full lg:w-3/5" dir="rtl" data-aos="fade-left" data-aos-duration="1000">
+                    <span class="text-blue-400 text-xs"><i class="fa-solid fa-chart-simple -rotate-90"></i> معلوماتي الك </span>
+                    <h2 class="text-2xl text-gray-700 mt-2">
+                        مرحبا بكم في منصة معلوماتي للسادس الابتدائي
+                        <i class="fa-solid fa-school-flag text-gray-600"></i>  
+                    </h2><br>
+                    <div class="text-[14px] text-gray-600">
+                        <p>
+                            مرحبا بكم في <span class="text-blue-400">منصة معلوماتي الك الابتدائية</span> 
+                            الألكترونية. سنقدم لكم في هذه المدرسة 
+                            جميع ما يحتاجه طلاب السداس الابتدائي واولياء الامور.
+                        </p>
+                        <br>
+                        <p>
+                            جميع الملازم والكتب والقنوات التعليميه سوف تكون في هذه المدرسة .
+                        </p><br>
+                    </div>
+
+                    <p class="text-[16px] text-gray-800 mt-4"> تقسم المنصة الخاصة بالسادس الابتدائي </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-600 text-[14px] mt-2">
+                        
+                        <ul class="space-y-2 py-2" data-aos="fade-up"  data-aos-duration="1000">
+                            <li><i class="fa-solid fa-arrow-left text-blue-400 px-1"></i> الكتب</li>
+                            <li><i class="fa-solid fa-arrow-left text-blue-400 px-1"></i> الملازم</li>
+                            <li><i class="fa-solid fa-arrow-left text-blue-400 px-1"></i> الملخصات</li>
+                        </ul>
+                        <ul class="space-y-2 py-2" data-aos="fade-down" data-aos-duration="1000">
+                            <li><i class="fa-solid fa-arrow-left text-blue-400 px-1"></i> وزاريات السادس الابتدائي</li>
+                            <li><i class="fa-solid fa-arrow-left text-blue-400 px-1"></i> قنوات اليوتيوب</li>
+                            <li><i class="fa-solid fa-arrow-left text-blue-400 px-1"></i> النتائج الخاصة بالوزاري</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- select class-6 section -->
+    <section id="select-section-c6" class="pt-44 pb-32">
+        <!-- container -->
+        <div class="max-w-7xl mx-auto px-4 text-center" dir="rtl">
+            <!-- content title -->
+                <h2 class="text-3xl font-bold md:text-4xl text-center text-gray-700 mb-8" data-aos="fade-down"> الصف السادس الابتدائي </h2>
+                <p class="text-gray-600 text-sm leading-relaxed text-center pb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                  معلوماتي للابتدائية | ماذا تريد  ...
+                </p>
+                <div class="flex justify-center">
+                    <a href="#books-class-6"
+                     class="text-sm border border-gray-300 py-1 pl-0.5 pr-1 rounded mx-4  text-gray-800 hover:bg-gray-100" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100"> الكتب الدراسية </a>
+                     <a href="#malazem-s1-c6"
+                     class="text-sm border border-blue-300 py-1 pl-0.5 pr-1 rounded mx-4  text-blue-800 hover:bg-blue-100" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"> الملازم  </a>
+                    <a href="#"
+                     class="text-sm border border-green-300 py-1 pl-0.5 pr-1 rounded mx-4  text-green-800 hover:bg-green-100" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"> الاسئلة الوزارية  </a>
+                     <a href="#channel-class-1234" class="text-sm border border-red-400 py-1 pl-0.5 pr-1 rounded mx-4 text-red-800 hover:bg-red-100"data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100"> قنوات اليوتيوب </a>
+                </div><br>
+                <hr class="w-64 mx-auto pb-24 text-gray-400">
+        </div>
+    </section>
+
+    <!-- books-class-6 -->
+     <section id="books-class-6" class="bg-gray-100 py-16" dir="rtl">
+        <!-- start container-->
+        <div class="container max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-xl md:text-3xl text-center text-gray-500 mb-8">جميع كتب الصف السادس الابتدائي</h2>
+            <div class="overflow-x-auto">
+            <table class="min-w-full border border-gray-400 text-center rounded-lg overflow-hidden bg-white shadow-lg">
+                <caption class="caption-top pb-6 text-sm text-cyan-600">
+                اضغط على اسم المادة التي تريد تنزيلها ليتم تحميل الكتاب بشكل مباشر
+                </caption>
+                <thead class="bg-gray-700 text-white">
+                    <tr>
+                        <th class="px-4 py-2 border">الصف</th>
+                        <th class="px-4 py-2 border">اسم المادة</th>
+                        <th class="px-4 py-2 border">الإجراء</th>
+                    </tr>
+                </thead>
+                <tbody class="text-gray-800">
+                    <tr>
+                        <td class="px-4 py-2 border border-gray-300">السادس الابتدائي</td>
+                        <td class="px-4 py-2 border border-gray-300 text-blue-700">
+                        التربية الاسلامية    
+                        </td>
+                        <td class="px-4 py-2 border border-gray-300">
+                            <button>
+                            <a href="https://drive.google.com/file/d/1buSoaWUcdafLUBqM-2LQfvwvDThMbBLg/view" target="_blank" class="bg-gray-600 hover:bg-gray-500 text-white text-xs  sm:text-[13px] px-2 sm:px-4 py-1 rounded transition">
+                            اضغط للتنزيل
+                            </a>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-2 border border-gray-300">السادس الابتدائي</td>
+                        <td class="px-4 py-2 border border-gray-300 text-blue-700">
+                            كتاب القراءة
+                        </td>
+                        <td class="px-4 py-2 border border-gray-300">
+                            <button>
+                            <a href="https://drive.google.com/file/d/1WrRvt5FfV5OHmEghvZEOkaaj2nlPXnk3/view" target="_blank" class="bg-gray-600 hover:bg-gray-500 text-white text-xs  sm:text-[13px] px-2 sm:px-4 py-1 rounded transition">
+                            اضغط للتنزيل
+                            </a>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-2 border border-gray-300">السادس الابتدائي</td>
+                        <td class="px-4 py-2 border border-gray-300 text-blue-700">
+                            كتاب القواعد
+                        </td>
+                        <td class="px-4 py-2 border border-gray-300">
+                            <button>
+                            <a href="https://drive.google.com/file/d/1P0jTP4wVA108K1akK94y4Kdzd-v8r0f5/view" target="_blank" class="bg-gray-600 hover:bg-gray-500 text-white text-xs  sm:text-[13px] px-2 sm:px-4 py-1 rounded transition">
+                            اضغط للتنزيل
+                            </a>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-2 border border-gray-300">السادس الابتدائي</td>
+                        <td class="px-4 py-2 border border-gray-300 text-blue-700">
+                            كتاب الانكليزي <br>
+                            (كتاب الطالب)
+                        </td>
+                        <td class="px-4 py-2 border border-gray-300">
+                            <button>
+                            <a href="https://drive.google.com/file/d/1mo3ci9WfNuq-Oi4jmfBtPWQ5W106e837/view" target="_blank" class="bg-gray-600 hover:bg-gray-500 text-white text-xs  sm:text-[13px] px-2 sm:px-4 py-1 rounded transition">
+                            اضغط للتنزيل
+                            </a>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-2 border border-gray-300">السادس الابتدائي</td>
+                        <td class="px-4 py-2 border border-gray-300 text-blue-700">
+                            كتاب الانكليزي<br>
+                             (كتاب النشاط)
+                        </td>
+                        <td class="px-4 py-2 border border-gray-300">
+                            <button>
+                            <a href="https://drive.google.com/file/d/1XSTUdvVM6YJ9xc1f5Q1pGn6K1COwi1U8/view" target="_blank" class="bg-gray-600 hover:bg-gray-500 text-white text-xs  sm:text-[13px] px-2 sm:px-4 py-1 rounded transition">
+                            اضغط للتنزيل
+                            </a>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-2 border border-gray-300">السادس الابتدائي</td>
+                        <td class="px-4 py-2 border border-gray-300 text-blue-700">
+                            كتاب الانكليزي<br>
+                             (كتاب النشاط المحلول)
+                        </td>
+                        <td class="px-4 py-2 border border-gray-300">
+                            <button>
+                            <a href="https://drive.google.com/file/d/1VYyjSpr7QGlJXjKu99ohcK96O8ufU_o6/view" target="_blank" class="bg-gray-600 hover:bg-gray-500 text-white text-xs  sm:text-[13px] px-2 sm:px-4 py-1 rounded transition">
+                            اضغط للتنزيل
+                            </a>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-2 border border-gray-300">السادس الابتدائي</td>
+                        <td class="px-4 py-2 border border-gray-300 text-blue-700">
+                            العلوم <br>
+                            (كتاب التلميذ)
+                        </td>
+                        <td class="px-4 py-2 border border-gray-300">
+                            <button>
+                            <a href="https://drive.google.com/file/d/1gLRFaIITPuAhteFWsoUVcAaJyV__QoU6/view" target="_blank" class="bg-gray-600 hover:bg-gray-500 text-white text-xs sm:text-[13px] px-2 sm:px-4 py-1 rounded transition">
+                            اضغط للتنزيل
+                            </a>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-2 border border-gray-300">السادس الابتدائي</td>
+                        <td class="px-4 py-2 border border-gray-300 text-blue-700">
+                            العلوم <br>
+                            (كتاب النشاط)
+                        </td>
+                        <td class="px-4 py-2 border border-gray-300">
+                            <button>
+                            <a href="https://drive.google.com/file/d/1EqyW1cGIFlBN7QRrT9fKLzOaucxxs9-C/view" target="_blank" class="bg-gray-600 hover:bg-gray-500 text-white text-xs  sm:text-[13px] px-2 sm:px-4 py-1 rounded transition">
+                            اضغط للتنزيل
+                            </a>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-2 border border-gray-300">السادس الابتدائي</td>
+                        <td class="px-4 py-2 border border-gray-300 text-blue-700">
+                            الرياضيات<br>
+                             (الكتاب)
+                        </td>
+                        <td class="px-4 py-2 border border-gray-300 ">
+                            <button>
+                            <a href="https://drive.google.com/file/d/1hAI9cI6hW_1MTjkH95VtkHpR9r8YHbtg/view" target="_blank" class="bg-gray-600 hover:bg-gray-500 text-white text-xs  sm:text-[13px] px-2 sm:px-4 py-1 rounded transition">
+                            اضغط للتنزيل
+                            </a>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-2 border border-gray-300">السادس الابتدائي</td>
+                        <td class="px-4 py-2 border border-gray-300 text-blue-700">
+                            الرياضيات<br>
+                             (التمرينات)
+                        </td>
+                        <td class="px-4 py-2 border border-gray-300 ">
+                            <button>
+                            <a href="https://drive.google.com/file/d/1UN7ppmEgz0jr6liWJI6W6X65Ze4ErJGs/view" target="_blank" class="bg-gray-600 hover:bg-gray-500 text-white text-xs  sm:text-[13px] px-2 sm:px-4 py-1 rounded transition">
+                            اضغط للتنزيل
+                            </a>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-2 border border-gray-300">السادس الابتدائي</td>
+                        <td class="px-4 py-2 border border-gray-300 text-blue-700">
+                            كتاب الاجتماعيات
+                        </td>
+                        <td class="px-4 py-2 border border-gray-300">
+                            <button>
+                            <a href="https://drive.google.com/file/d/1s7dDSjCWG_hfeNTpeJKxTn9pzqoiJcH2/view" target="_blank" class="bg-gray-600 hover:bg-gray-500 text-white text-xs sm:text-[13px] px-2 sm:px-4 py-1 rounded transition">
+                            اضغط للتنزيل
+                            </a>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+     </section>
+
+     <!-- malazem-class-5 -->
+     <section id="malazem-s1-c6" class="bg-gray-100 py-16" dir="rtl">
+        <!-- start container-->
+        <div class="container max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-xl md:text-3xl text-center text-blue-500 mb-8"> ملازم الصف السادس الابتدائي</h2>
+            <div class="overflow-x-auto">
+            <table class="min-w-full border border-blue-400 text-center rounded-lg overflow-hidden bg-white shadow-lg">
+                <caption class="caption-top pb-6 text-sm text-gray-600">
+                اضغط على اسم المادة التي تريد تنزيلها ليتم تحميل الكتاب بشكل مباشر
+                </caption>
+                <thead class="bg-blue-700 text-white">
+                    <tr>
+                        <th class="px-4 py-2 border"> اسم المادة </th>
+                        <th class="px-4 py-2 border"> اسم المعلم/ة </th>
+                        <th class="px-4 py-2 border"> الاجراء </th>
+                    </tr>
+                </thead>
+                <tbody class="text-gray-800">
+                    <tr>
+                        <td class="px-4 py-2 border border-gray-300"> التربية الاسلامية </td>
+                        <td class="px-4 py-2 border border-gray-300 text-gray-700">
+                            سندس حادث عباس
+                        </td>
+                        <td class="px-4 py-2 border border-gray-300">
+                            <button>
+                            <a href="https://drive.google.com/file/d/1fE82JkOeSWKoRavc4u1pW4L2FENCc4Qh/view" target="_blank" class="bg-blue-600 hover:bg-blue-500 text-white text-xs  sm:text-[13px] px-2 sm:px-4 py-1 rounded transition">
+                            اضغط للتنزيل
+                            </a>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-2 border border-gray-300"> قواعد اللغة العربية  </td>
+                        <td class="px-4 py-2 border border-gray-300 text-gray-700">
+                            معيد الهاشمي
+                        </td>
+                        <td class="px-4 py-2 border border-gray-300">
+                            <button>
+                            <a href="https://drive.google.com/file/d/1ulVcl8I4lC3-goTEyUaB_1fW7ASMIo3W/view" target="_blank" class="bg-blue-600 hover:bg-blue-500 text-white text-xs  sm:text-[13px] px-2 sm:px-4 py-1 rounded transition">
+                            اضغط للتنزيل
+                            </a>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-2 border border-gray-300"> الانكليزي</td>
+                        <td class="px-4 py-2 border border-gray-300 text-gray-700">
+                            طه ياسين
+                        </td>
+                        <td class="px-4 py-2 border border-gray-300">
+                            <button>
+                            <a href="https://drive.google.com/file/d/1ZgHwo0FTUXEWJguLPUoeHGsn7ke3xDLv/view" target="_blank" class="bg-blue-600 hover:bg-blue-500 text-white text-xs  sm:text-[13px] px-2 sm:px-4 py-1 rounded transition">
+                            اضغط للتنزيل
+                            </a>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-2 border border-gray-300"> الانكليزي</td>
+                        <td class="px-4 py-2 border border-gray-300 text-gray-700">
+                            وليد طعمه <br>
+                            ميعاد الموسوي 
+                        </td>
+                        <td class="px-4 py-2 border border-gray-300">
+                            <button>
+                            <a href="https://drive.google.com/file/d/1BfQZOCJSwGBCRZ3Lowz22Rb3OXvUf8T3/view" target="_blank" class="bg-blue-600 hover:bg-blue-500 text-white text-xs  sm:text-[13px] px-2 sm:px-4 py-1 rounded transition">
+                            اضغط للتنزيل
+                            </a>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-2 border border-gray-300"> الانكليزي</td>
+                        <td class="px-4 py-2 border border-gray-300 text-gray-700">
+                            احمد شكري
+                        </td>
+                        <td class="px-4 py-2 border border-gray-300">
+                            <button>
+                            <a href="https://drive.google.com/file/d/1R9Khxut0k_LR9XF6r7o0nQgX11ZMxPfC/view" target="_blank" class="bg-blue-600 hover:bg-blue-500 text-white text-xs  sm:text-[13px] px-2 sm:px-4 py-1 rounded transition">
+                            اضغط للتنزيل
+                            </a>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-2 border border-gray-300"> ملخص الانكليزي </td>
+                        <td class="px-4 py-2 border border-gray-300 text-gray-700">
+                            حسن المزوري 
+                        </td>
+                        <td class="px-4 py-2 border border-gray-300">
+                            <button>
+                            <a href="https://drive.google.com/file/d/1vFiYbgaMUTu_s89wFOT2V143qH3KTBLk/view" target="_blank" class="bg-blue-600 hover:bg-blue-500 text-white text-xs  sm:text-[13px] px-2 sm:px-4 py-1 rounded transition">
+                            اضغط للتنزيل
+                            </a>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-2 border border-gray-300"> الرياضيات  </td>
+                        <td class="px-4 py-2 border border-gray-300 text-gray-700">
+                             قادة الرياضيات
+                        </td>
+                        <td class="px-4 py-2 border border-gray-300">
+                            <button>
+                            <a href="https://drive.google.com/file/d/16A5Th0qMxSkq3bxC7Faq-73zz5sWBt1R/view" target="_blank" class="bg-blue-600 hover:bg-blue-500 text-white text-xs  sm:text-[13px] px-2 sm:px-4 py-1 rounded transition">
+                            اضغط للتنزيل
+                            </a>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-2 border border-gray-300"> العلوم  </td>
+                        <td class="px-4 py-2 border border-gray-300 text-gray-700">
+                            حيدر السعداوي
+                        </td>
+                        <td class="px-4 py-2 border border-gray-300">
+                            <button>
+                            <a href="https://drive.google.com/file/d/1WMYAnWgOkBjUUxwlCjIgHSseKmElVGhs/view" target="_blank" class="bg-blue-600 hover:bg-blue-500 text-white text-xs  sm:text-[13px] px-2 sm:px-4 py-1 rounded transition">
+                            اضغط للتنزيل
+                            </a>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-2 border border-gray-300"> العلوم  </td>
+                        <td class="px-4 py-2 border border-gray-300 text-gray-700">
+                            شيماء خالد الذهبي 
+                        </td>
+                        <td class="px-4 py-2 border border-gray-300">
+                            <button>
+                            <a href="https://drive.google.com/file/d/1MjlAFIBPwCYqhlg36TqoIQtsO42oi4LU/view" target="_blank" class="bg-blue-600 hover:bg-blue-500 text-white text-xs  sm:text-[13px] px-2 sm:px-4 py-1 rounded transition">
+                            اضغط للتنزيل
+                            </a>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-2 border border-gray-300"> ملخص العلوم  </td>
+                        <td class="px-4 py-2 border border-gray-300 text-gray-700">
+                            احمد شاكر عثمان
+                        </td>
+                        <td class="px-4 py-2 border border-gray-300">
+                            <button>
+                            <a href="https://drive.google.com/file/d/1EMXi3IXv7cW8ERCwYYoSsUV2qztloRh4/view" target="_blank" class="bg-blue-600 hover:bg-blue-500 text-white text-xs  sm:text-[13px] px-2 sm:px-4 py-1 rounded transition">
+                            اضغط للتنزيل
+                            </a>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-2 border border-gray-300"> الاجتماعيات </td>
+                        <td class="px-4 py-2 border border-gray-300 text-gray-700">
+                            احمد جبار الدايني
+                        </td>
+                        <td class="px-4 py-2 border border-gray-300">
+                            <button>
+                            <a href="https://drive.google.com/file/d/1RvoOUgpeTfzJyOYgmk2o42Tsn6Y5Km5Y/view" target="_blank" class="bg-blue-600 hover:bg-blue-500 text-white text-xs  sm:text-[13px] px-2 sm:px-4 py-1 rounded transition">
+                            اضغط للتنزيل
+                            </a>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-2 border border-gray-300"> ملخص الاجتماعيات </td>
+                        <td class="px-4 py-2 border border-gray-300 text-gray-700">
+                           زينة حسين
+                        </td>
+                        <td class="px-4 py-2 border border-gray-300">
+                            <button>
+                            <a href="https://drive.google.com/file/d/1tIlt93BXDIgZAPHqHzfnIx9t17xdrLtN/view" target="_blank" class="bg-blue-600 hover:bg-blue-500 text-white text-xs  sm:text-[13px] px-2 sm:px-4 py-1 rounded transition">
+                            اضغط للتنزيل
+                            </a>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-2 border border-gray-300"> ملخص الاجتماعيات </td>
+                        <td class="px-4 py-2 border border-gray-300 text-gray-700">
+                           سعد حميد
+                        </td>
+                        <td class="px-4 py-2 border border-gray-300">
+                            <button>
+                            <a href="https://drive.google.com/file/d/11vlLmzMX5EueXn9X0ynBVLaTTC48Nq1u/view" target="_blank" class="bg-blue-600 hover:bg-blue-500 text-white text-xs  sm:text-[13px] px-2 sm:px-4 py-1 rounded transition">
+                            اضغط للتنزيل
+                            </a>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+     </section>
+
+     <!-- all channel youtube -->
+    <section id="channel-class-1234" class="bg-green-50 py-16" dir="rtl">
+        <div class="container max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-xl md:text-3xl text-center text-red-800 mb-8"> معلوماتي للابتدائية | قنوات اليوتيوب التعليمية </h2>
+            <div class="overflow-x-auto">
+                <table class="min-w-full border border-red-400 text-center rounded-lg overflow-hidden bg-white shadow-lg">
+                    <caption class="caption-top pb-6 text-sm text-gray-600">
+                    اختر اسم القناة التي تريدها , سوف يقوم بتحويلك للقناة في اليوتيوب مباشرة
+                    </caption>
+                    <thead class="bg-red-700 text-white">
+                        <tr>
+                            <th class="px-4 py-2 border"> اسم القناة </th>
+                            <th class="px-4 py-2 border">وصف القناة  </th>
+                            <th class="px-4 py-2 border"> الرابط </th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-gray-800">
+                        <tr>
+                            <td class="px-4 py-2 border border-gray-300"> العراق kids  التربوية </td>
+                            <td class="px-4 py-2 border border-gray-300 text-red-700">
+
+                            </td>
+                            <td class="px-4 py-2 border border-gray-300">
+                                <button>
+                                <a href="https://www.youtube.com/@iraqedukids/playlists" target="_blank"
+                                class="bg-red-600 hover:bg-red-500 text-white text-sm px-4 py-1 rounded transition"> اضغط هنا  </a>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-2 border border-gray-300"> قراءتي سحر وحسن </td>
+                            <td class="px-4 py-2 border border-gray-300 text-red-700">
+
+                            </td>
+                            <td class="px-4 py-2 border border-gray-300">
+                                <button>
+                                <a href="https://www.youtube.com/@Wf25w" target="_blank"
+                                class="bg-red-600 hover:bg-red-500 text-white text-sm px-4 py-1 rounded transition"> اضغط هنا  </a>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-2 border border-gray-300"> مدرسة بلادي الأهلية  </td>
+                            <td class="px-4 py-2 border border-gray-300 text-red-700">
+
+                            </td>
+                            <td class="px-4 py-2 border border-gray-300">
+                                <button>
+                                <a href="https://www.youtube.com/@%D9%85%D8%AF%D8%B1%D8%B3%D8%A9%D8%A8%D9%84%D8%A7%D8%AF%D9%8A%D8%A7%D9%84%D8%A7%D8%A8%D8%AA%D8%AF%D8%A7%D8%A6%D9%8A%D8%A9%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A-%D9%888%D8%B6/featured" target="_blank"
+                                class="bg-red-600 hover:bg-red-500 text-white text-sm px-4 py-1 rounded transition"> اضغط هنا  </a>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-2 border border-gray-300"> ابسط الطرق للتعلم </td>
+                            <td class="px-4 py-2 border border-gray-300 text-red-700">
+
+                            </td>
+                            <td class="px-4 py-2 border border-gray-300">
+                                <button>
+                                <a href="https://www.youtube.com/@Maryam777/playlists" target="_blank"
+                                class="bg-red-600 hover:bg-red-500 text-white text-sm px-4 py-1 rounded transition"> اضغط هنا  </a>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-2 border border-gray-300"> Mustafa Hussein </td>
+                            <td class="px-4 py-2 border border-gray-300 text-red-700">
+
+                            </td>
+                            <td class="px-4 py-2 border border-gray-300">
+                                <button>
+                                <a href="https://www.youtube.com/@mustafahussein3060" target="_blank"
+                                class="bg-red-600 hover:bg-red-500 text-white text-sm px-4 py-1 rounded transition"> اضغط هنا  </a>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-2 border border-gray-300"> وياي درسك سهل </td>
+                            <td class="px-4 py-2 border border-gray-300 text-red-700">
+
+                            </td>
+                            <td class="px-4 py-2 border border-gray-300">
+                                <button>
+                                <a href="https://www.youtube.com/@darsksahel/playlists" target="_blank"
+                                class="bg-red-600 hover:bg-red-500 text-white text-sm px-4 py-1 rounded transition"> اضغط هنا  </a>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+    </section>
+
+    <!-- contact -->
+     <section id="contact" class="py-16 bg-gray-100"dir="rtl">
+        <!-- container -->
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <!-- content title-->
+            <h2 class="text-5xl text-gray-600 text-center pb-12" data-aos="fade-down"> للتواصل معنا </h2>
+            <p class="text-gray-600 text-sm leading-relaxed text-center pb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                مرحبا بك في المنصة للتواصل معنا املئ البيانات ادناه ... <br>
+                سوف نقوم بالرد عليك باسرع وقت ممكن
+            </p>
+            <hr class="w-64 mx-auto pb-24 text-gray-400">
+
+                <form class="flex flex-col justify-center items-center border border-gray-400 h-full w-3/4 md:w-1/2 m-auto bg-white">
+                    <h3 class="text-gray-600 text-sm md:text-lg leading-relaxed text-center pt-10 pb-4"> من فضلك املئ الحقول واكتب مشكلتك </h3>
+                    <input type="text" name="text" placeholder="اكتب اسمك الثلاثي" required
+                    class="p-4 my-6 w-4/6 h-8 text-sm rounded text-gray-600 border border-gray-500 bg-gray-100 outline-gray-400"
+                    >
+                    <input type="email" name="email" placeholder="اكتب ايميلك هنا ... " required
+                    class="p-4 w-4/6 h-8 text-sm rounded text-gray-600 border border-gray-500 bg-gray-100 outline-gray-400"
+                    >
+                    <textarea name="msg" placeholder="اكتب مشكلتك ها ..."
+                    class="p-4 my-6 w-4/6 h-48 rounded resize-none text-xs text-gray-600 border border-gray-500 bg-gray-100 outline-gray-400" required></textarea>
+                    <button type="submit" class="w-4/6 h-8 my-4 cursor-pointer bg-gray-400 text-white hover:bg-blue-400 transition rounded">إرسال</button>
+                </form>
+        </div>
+    </section>
+
+    <!-- footer -->    
+    <footer id="footer" class="bg-gray-800 text-white py-10">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <!-- footer top -->
+             <div class="grid grid-cols-1 md:grid-cols-4 sm:grid-cols-2 gap-8 pb-4 justify-items-center sm:justify-items-end">
+                    <!-- item-1 about -->
+                    <div dir="rtl">
+                        <h2 class="pb-2 text-2xl text-right text-gray-300"> من نحن </h2>
+                        <hr class="w-24 pb-6  text-gray-400">
+                        <p class="text-xs text-justify leading-6 max-w-[200px] text-gray-300" > 
+                            منصة معلوماتي الك هي منصة تعليمية تقدم كل ما يحتاجه الطلاب بسهولة تامة
+                            جميع الملازم والكتب والقنوات التعليميه سوف تكون في هذه المدرسة وحسب المراحل الدراسية،
+                            كذلك سنقدم كورسات وتنظيم جداول دراسية.                        
+                        </p>
+                        <!-- media -->
+                        <div class="flex my-4">
+                            <a href="#" class="mx-4 text-2xl transition-transform hover:scale-105">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="mx-4 text-2xl transition-transform hover:scale-105">
+                                <i class="fa-brands fa-telegram"></i>
+                            </a>
+                            <a href="#" class="mx-4 text-2xl transition-transform hover:scale-105">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#" class="mx-4 text-2xl transition-transform hover:scale-105">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- item-2 links -->
+                    <div dir="rtl" class="text-right">
+                        <h2 class="pb-2 text-2xl text-gray-300"> الروابط </h2>
+                        <hr class="w-24 pb-6  text-gray-400">
+                        <!-- list links -->
+                        <nav class="text-gray-300">
+                            <ul class="text-xs">
+                                <li class="pb-4 transition-transform hover:-translate-x-4">
+                                    <i class="fa-solid fa-caret-left pl-1"></i>
+                                    <a href="#home">الصفحة الرئيسية </a>
+                                </li>
+                                <li class="pb-4 transition-transform hover:-translate-x-4">
+                                    <i class="fa-solid fa-caret-left pl-1"></i>
+                                    <a href="#select-section-c6"> الملازم </a>
+                                </li>
+                                <li class="pb-4 transition-transform hover:-translate-x-4">
+                                    <i class="fa-solid fa-caret-left pl-1"></i>
+                                    <a href="#about"> من نحن  </a>
+                                </li>
+                                <li class="pb-4 transition-transform hover:-translate-x-4">
+                                    <i class="fa-solid fa-caret-left pl-1"></i>
+                                    <a href="#contact"> اتصل بنا </a>
+                                </li>
+                                <li class="pb-4 transition-transform hover:-translate-x-4">
+                                    <i class="fa-solid fa-caret-left pl-1"></i>
+                                    <a href="#footer"> سياسة الخصوصية  </a>
+                                </li>
+                            </ul>   
+                        </nav>
+                    </div>
+
+                    <!-- item-3 work hours -->
+                    <div dir="rtl" class="text-right">
+                        <h2 class="pb-2 text-2xl text-gray-300"> وقت عمل المنصة </h2>
+                        <hr class="w-44 pb-6  text-gray-400">
+                        <p class="text-xs text-justify leading-6 max-w-[200px] text-gray-300" > 
+                            منصة معلوماتي الك هي منصة الكترونية متاحة على مدار الساعة .<br>
+                            ليس عليك سوى التسجيل في المنصة وتصفح المدارس بسهولة بأي وقت .
+                        </p>
+                    </div>
+
+                    <!-- item-4 contact -->
+                    <div dir="rtl" class="text-right mb-4">
+                        <h2 class="pb-2 text-2xl text-gray-300"> تواصل معنا </h2>
+                        <hr class="w-32 pb-6  text-gray-400">
+                        <form class="flex flex-col text-gray-700 text-right">
+                            <input type="text" placeholder="اكتب اسمك الثلاثي ..." class="p-1 max-w-3/4 text-xs rounded mb-2 border border-gray-500 bg-gray-300 outline-none" required>
+
+                            <input type="text" placeholder="اكتب مرحلتك الدراسية  ..." class="p-1 max-w-3/4 text-xs rounded mb-2 border border-gray-500 bg-gray-300 outline-none" required>
+
+                            <input type="email" placeholder="اكتب ايميلك هنا ..." class="mb-2 p-1 max-w-3/4 text-xs rounded border border-gray-500 bg-gray-300 outline-none" required>
+
+                            <textarea name="msg" placeholder="اكتب مشكلتك ها ..."
+                                class="p-4 mb-2 max-w-3/4 resize-none text-justify text-xs text-gray-600 border border-gray-500 bg-gray-100 outline-gray-400" required>
+                            </textarea>
+
+                            <button type="submit" class="p-1 max-w-3/4 h-10 text-[14px] cursor-pointer bg-gray-600 text-white hover:bg-gray-400 transition rounded">إرسال</button>
+                        </form>
+                    </div>
+            </div>
+                <!-- copyright -->
+                <p>&copy; All Rights reserved 2025 | Mode by mansa malomate.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800, // مدة الأنميشن
+        once: true     // يظهر مرة واحدة فقط
+      });
+    </script>
+<!-- npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --watch -->
+</body>
+</html>
